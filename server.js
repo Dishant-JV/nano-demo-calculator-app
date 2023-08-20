@@ -14,12 +14,12 @@ baseRouter.get('/greeting', (req, res) => {
 });
 
 baseRouter.post('/add', (req, res) => {
-    res.json({ "result": parseInt(req.query.first) + parseInt(req.query.second)});
+    res.json({ "result": parseInt(req.body.first) + parseInt(req.body.second)});
 });
 
 
 baseRouter.post('/subtract', (req, res) => {
-    res.json({ "result": parseInt(req.query.first) - parseInt(req.query.second)});
+    res.json({ "result": parseInt(req.body.first) - parseInt(req.body.second)});
 
 });
 
